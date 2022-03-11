@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>內建物建Array</title>
+</head>
+<body>
+    <!-- 1.建立字串物件
+    let arr = [];
+    let arr = new Array();
+
+    let arr = [2,4,6,'ABC',true, new Date()];
+    let arr = new Array(2,4,6,'ABC',true, new Date());
+
+    2.如何存取?
+        console.log(arr[0]);  >> 2
+        for(let i = 0 ; i < arr.length; i++){
+            console.log(arr[i]);
+        }
+
+    3.屬性: length
+    
+    4.方法
+        -indexOf() | lastIndexOf()
+        -push(item) | pop() 新增刪除在後端
+        -unshift(item) | shift() 新增刪除在前端
+        -splice() 新增刪除任意端
+            -splice(index) 刪除
+            -splice(index, 筆數) 刪除
+            -splice(index, 筆數, 新增1, 新增2, 新增....) 也可以新增
+
+        -join() 陣列組成字串 -->
+
+        
+    <script>
+        window.onload = function(){
+            let friends = ['Andy','Brian','Carl','Dale','Ela'];
+            for(let i = 0 ; i < friends.lenght; i++){
+                document.write(`${friends[i]}<br>`);
+            }
+            document.write(`--------------------------------------<br>`)
+           
+            let theMonths = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug'];
+            document.write(`${months.indexOf('Apr')}<br>`);
+            document.write(`${months.indexOf('Aug')}<br>`);
+
+            let glueItem = months.join(' - ');
+
+        }
+    </script>        
+</body>
+</html>

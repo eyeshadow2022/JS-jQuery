@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>用戶端自動登入(使用Cookie)</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="offset-sm-3 col-sm-6 my-5 p-5 border shadow">
+				<h3 class="text-center">登入畫面</h3>
+				<form>
+					<div class="mb-3">
+						<label for="username" class="form-label">使用者名稱</label>
+						<input class="form-control" type="text" name="username" id="username"
+							   placeholder="請輸入使用者名稱" />
+					</div>
+					<div class="mb-3">
+						<label for="password" class="form-label">密碼</label>
+						<input class="form-control form-control-sm" type="password" name="password" id="password"
+							   placeholder="請輸入密碼" />
+					</div>
+					<div class="mb-3 form-check">
+						<input class="form-check-input" type="checkbox" id="autoLogin" name="autoLogin" value="true" />
+						<label class="form-check-label" for="autoLogin">將來擬自動登入</label>
+					</div>
+
+					<div class="mb-3">
+						<select class="form-select" name="hobby" id="hobby">
+							<option disabled selected>請選擇您的興趣</option>
+							<option value="1">吟詩</option>
+							<option value="2">作對</option>
+							<option value="3">彈琴</option>
+						</select>
+					</div>
+					<div class="mb-3">
+						<div class="alert alert-primary fade" id="alert">							
+							<strong>Welcome</strong> 歡迎大駕光臨!
+						</div>
+					</div>
+					<button type="submit" class="btn btn-primary">送出</button>
+					<button type="reset" class="btn btn-info">清除</button>
+					<button type="reset" class="btn btn-danger float-end" id="btn-greeting">切換顯示歡迎詞</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script>
+		$("#btn-greeting").click(function () {
+			let alert =  $("#alert");
+			if (alert.hasClass("show")) {
+                alert.removeClass('show');
+			}
+			else {
+				alert.addClass('show');
+				setTimeout(function () {
+					alert.removeClass('show');
+				}, 3000);
+            }			
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS -- BMI</title>
+</head>
+
+<body>
+    <p>
+        <label for="weight"> 體重: </label>
+        <input type="type" id="weight">
+    </p>
+    <p>
+        <label for="height"> 身高: </label>
+        <input type="type" id="height">
+        <button onclick="calculate()"> 計算 </button>
+    </p>
+    <p>
+        your BMI is <span id="BMI" style="color: red;"></span>
+    </p>
+    <script>
+        function calculate(){
+            let weight = document.getElementById(`weight`).value;
+            let height = document.getElementById(`height`).value;
+
+            let bmi = weight / Math.pow(height / 100 , 2)
+            BMI.innerText = bmi.toFixed(3);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font:   italic 18px bold  ;
+}
+body{
+    background-color: rgb(202, 201, 201);
+}
+#theForm{
+    background: white;
+    padding: 10px;
+    width: 250px;
+    margin: 50px;
+    border: 1px solid #bbb ;
+}
+#theForm div{
+    margin: 10px;
+}
+label,button{
+    text-transform: capitalize;
+}
+#result{
+    height: 40px;
+    width: 200px;
+    border: 1px solid #bbb;
+    font-size: 24px;
+    color: maroon;
+
+    text-align: center;
+    line-height: 45px;
+}

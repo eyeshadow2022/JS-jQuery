@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS -- 內建物建 Number</title>
+</head>
+
+<body>
+    <script>
+        window.onload = function (){
+            document.title = `Test!!`
+
+            // 1 + 2 + 3 ... + 10
+            let total = 0 ;
+            for (let i = 1 ; i <= 10; i++){
+                total += i ;
+            }
+            document.write(`total is ${total}<br>==========<br>`);
+    
+        
+        let total2 = 0 ;
+        for (let j = 1 ; j <= 100; j++){
+            total2 += j ;
+            total2 = (1 + 100) * 100 / 2
+        }
+        document.write(`total is ${total2}<br>`);
+
+        // //內建物建 Math
+        // 1. 不需要建立 Math 型態的變數(也就是不能使用new來給初值),
+        //     直接使用其屬性和方法即可
+        // 2. Math 的屬性: Math.PI
+        // 3. Math 的方法:
+        //     - Math.abs(x) 傳回絕對值
+        //     - Math.ceil(x) 傳回四捨五入最接近的整數值(向上)
+        //     - Math.floor(x)  傳回四捨五入最接近的整數值(向下)
+        //         ex: 5.6 ; ceil 傳回 6 ; floor 傳回 5 ; 
+        //     - Math.max(x,y) 傳回最大值
+        //     - Math.min(x,y) 傳回最小值
+
+        //     - Math.pow(x,幾次方) 傳回幾次方
+        //     - Math.sqrt(x,幾次方) 傳回平方根
+
+        //     - Math.random() 傳回 0 ~ 1 之間 (不含1)的隨機亂數
+        //     - Math.round(x) 傳回四捨五入之後的整數值
+    }
+    </script>
+
+</body>
+
+</html>

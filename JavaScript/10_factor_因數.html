@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS -- 找出所有的因數</title>
+</head>
+<body>
+    <!-- 
+        先產生 1 ~ 100 的整數亂數，找出該亂數內所有的合數
+        (※合數: 除了1和本身以外，可以被整除的數)
+        ex: 18 -- 2, 3, 6, 9 可以整除18
+     -->
+
+
+    <script>
+        window.onload = function(){
+            let num = parseInt( Math.random() * 1000) +1 ;
+            
+            //// 1
+            // for ( let div = 2; div < num ; div++){
+            //     if (num % div == 0 ){
+            //         document.write(`${num} is divisible by ${div} <br>`)
+            //     }
+            // }
+
+            //// 2
+            // for(let div = 2; div*div <= num; div++){
+            //     if (num % div == 0){
+            //         document.write(`${num} is divisible by ${div} and ${num / div} <br>`)
+            //     }
+            // }
+
+            //// 3
+            // for (let div=2; div*div <= num; div++){
+            //     if(num % div ==0){
+            //         if(div * div != num){
+            //             document.write(`${num} is  divisible by ${div} and ${num / div}<br> `)
+            //         }else{
+            //             document.write(`${num} is  divisible by ${div}<br> `)
+            //         }
+            //     }
+            // }
+
+            // 4 判斷質數
+
+
+                
+
+        }
+    </script>
+</body>
+</html>

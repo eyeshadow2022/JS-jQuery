@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ES6-- new feature -- classes(JS的物件導向:定義類別)</title>
+</head>
+
+<body>
+    <script>
+        class Person{
+            constructor(name, age , weight){
+                this.name = name;
+                this.age = age;
+                this.weight = weight;
+            }
+            displayName(){
+                console.log(this.name);
+            }
+            displayAge(){
+                console.log(this.age);
+            }
+            displayWeight(){
+                console.log(this.weight);
+            }
+        }
+
+        let peter = new Person('Peter', 40, 78.5);
+        peter.displayName();
+        peter.displayAge();
+        peter.displayWeight();
+
+        let sally = new Person('Sally', 25);
+        sally.displayName();
+        sally.displayAge();
+
+    // JAVA寫法↓
+    //     // 屬性
+    //         String name;
+    //         int age;
+    //         double weight;
+    //     // 建構子
+    //         Person(){}
+    //         Person(String name, int age, double weight){ 
+    //         this.name = name;
+    //         this.age = age;
+    //         this.weight = weight;
+    //         }
+    //     // 方法
+    //         String displayName(){
+    //         return this.name;
+    //         }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ES6-- new feature -- classes(JS的物件導向:繼承)</title>
+</head>
+
+<body>
+    <script>
+       
+        class Person{
+            constructor(name, age , weight){
+                this.name = name;
+                this.age = age;
+                this.weight = weight;
+            }
+            displayName(){
+                console.log(this.name);
+            }
+            displayAge(){
+                console.log(this.age);
+            }
+            displayWeight(){
+                console.log(this.weight);
+            }
+        }
+
+        class Programmer extends Person{
+            constructor(name, age , weight, language){
+                super(name, age , weight);
+
+                this.language = language;
+            }
+            displayLanguage(){
+                console.log(this.language);
+            }
+        }
+
+        let peter = new Person('Peter', 40, 78.5, 'JavaScript');
+        peter.displayName();
+        peter.displayAge();
+        peter.displayWeight();
+        // peter.displayLanguage(); //Uncaught TypeError: peter.displayLanguage is not a function
+        // 出錯是因為Peter 是Person 不是Programmer 所以沒辦法用Programmer類別的東西
+        let sally = new Programmer('Sally', 25, 50, 'VueJS');
+        sally.displayName();
+        sally.displayAge();
+        sally.displayLanguage();
+   
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS -- var | let | const</title>
+</head>
+
+<body>
+    <h2 id="result"></h2>
+
+    <script>
+        window.onload = function(){
+            //var
+            for(var i = 0 ; i < 5 ; i++){
+                document.write(`${i}<br>`)
+            };
+            document.write(`${i}<br>`);
+            document.write(`============<br>`);
+
+            //let
+            for(let j = 0 ; j < 5 ; j++){
+                document.write(`${j}<br>`)
+            };
+            //document.write(`${j}<br>`);
+            // j is not defined
+            document.write(`============<br>`);
+
+            // const : 不能被(指派) re-assigned
+            const FULL_NAME = `Alicia`;
+            document.write(`${FULL_NAME}<br>`);
+            document.write(`============<br>`);
+
+            // FULL_NAME = `Ann`;
+            // document.write(`${FULL_NAME}<br>`);
+
+            const POINT = {
+                X: 100,
+                Y: 200,
+            }
+            document.write(`${POINT.X}<br>`)
+
+            POINT.X = 500,  //換家具的概念
+            document.write(`${POINT.X}<br>`) 
+            document.write(`============<br>`);
+
+        }
+
+        // //陣列
+        // let arr = [];
+        // let arr = new Array();
+
+        // let arr = [2,4,6,true,`ABC`, new Date()];
+        // let arr = new Array(2,4,6,true,`ABC`, new Date());
+
+        // //物件
+        // let obj = {} ; 
+        // let obj = new Object() ;
+
+        // let obj = {
+        //     屬性: 屬性質,
+        //     key: value ,
+        // } ; 
+        // let man = {
+        //     name: `Peter`,
+        //     age: 40,
+        //     gender: `male`,
+        //     favoriateColor: [`white`,`black`,`gray`],
+        //     car:{
+        //         make: `BMW`,
+        //         Mode: `X5`,
+        //         year: 2020,
+        //     },
+        //     retired: false,
+        //     sayHollo: function(){}, //ES5
+        //     sayHollo(){}, //ES6
+        // };
+
+    </script>
+
+</body>
+
+</html>

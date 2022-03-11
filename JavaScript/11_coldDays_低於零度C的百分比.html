@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>冷冷冷冷冷</title>
+</head>
+<body>
+    <script>
+        window.onload = function (){
+            let mun = parseInt(Math.random()*1000)+1;
+            let allDays = 10;
+            let coldDays = 0;
+
+            for (let i = 0; i < allDays; i++){
+                temperature = parseInt (Math.random()*11)-5;
+                document.write(`${temperature}  `);
+
+                if(temperature < 0){
+                    coldDays++;
+                }
+            }
+            document.write(`<br>`);
+
+            //印出低於零度C的百分比
+            document.write(`${allDays} days total: ${coldDays / allDays * 100} % were below freezing. <br>`)
+        }
+
+        const SEC_PER_MIN = 60;
+    </script>
+</body>
+</html>

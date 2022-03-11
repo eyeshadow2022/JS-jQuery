@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>計算Ｇ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="new.js"></script>
+</head>
+
+<body>
+    <form id="theForm">
+        <fieldset>
+            <legend>Calculator</legend>
+            <div>
+                <label>quantity:</label>
+                <input type="number" min="0" name="quantity" id="quantity">
+            </div>
+            <div>
+                <label>price per unit:</label>
+                <input type="number" step="0.1" min="0" name="price"id="price">
+             </div> <!--  用step可以有小數點 -->
+            <div>
+                <label>tax rate(%):</label>
+                <input type="number" step="0.1" min="0"  name="tax"id="tax">
+            </div>
+            <div>
+                <label>discount:</label>
+                <input type="number"  min="0" name="discount" id="discount">
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+            <div id="result"></div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

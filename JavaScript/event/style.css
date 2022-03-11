@@ -1,0 +1,22 @@
+*{
+
+    font: 18px  Calibri ;
+}
+body{
+    background-color: rgb(202, 201, 201);
+}
+#theForm{
+   
+    margin: 10px ;
+    
+}
+#theForm div{
+    margin: 10px 20px;
+}
+
+#result{
+    border: 1px solid #bbb;
+    width: 350px;
+    font-size: 24px;
+    color: maroon;
+}
